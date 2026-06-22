@@ -1,0 +1,8 @@
+# Block access to .env files
+<FilesMatch "^\.env">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Block directory listing for logs
+Options -Indexes
